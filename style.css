@@ -10,7 +10,7 @@ header {
     align-items: center;
     text-align: center;
     padding: 0;
-    font-family: Helvetica;
+    font-family: 'Roboto', sans-serif;
 }
 
 /*NAVIGATION BAR STYLE STARTS HERE*/
@@ -20,13 +20,13 @@ nav {
     margin: 0px auto 0;
     position: relative;
     width: 100%;
-    height: 75px;
+    height: 60px;
     background-color: rgba(0, 0, 0, 0.9); /* Black with 70% opacity */
     border-radius: 8px;
     display: flex;
     justify-content: space-between; /* Distribute the remaining space evenly between the flex items */
     align-items: center; /* Align the items vertically in the center */
-    font-family: Helvetica;
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
 }
 
@@ -63,13 +63,14 @@ nav {
     display: inline-block;
     position: relative;
     justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Style for navigation links */
 nav a {
     line-height: 50px;
     height: 100%;
-    font-size: 15px;
+    font-size: 16px;
     display: inline-block;
     position: relative;
     z-index: 1;
@@ -79,6 +80,7 @@ nav a {
     color: #ecf0f1;
     cursor: pointer;
     width: 20%;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* Style for animation in navigation links */
@@ -155,8 +157,8 @@ nav .start-contact, a:nth-child(5):hover~.animation {
 
 /* Style for body */
 body {
-    font-size: 12px;
-    font-family: Helvetica;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
     background: url('Images/futbackground.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
@@ -180,7 +182,7 @@ h1 {
     font-size: 30px;
     color: #ecf0f1;
     text-shadow: 2px 2px 4px #000000;
-    font-family: Helvetica;
+    font-family: 'Roboto', sans-serif;
 }
 
 
@@ -193,8 +195,8 @@ h1 {
     min-height: 25vh;
     margin: 0;
     padding: 0;
-    line-height: 1.5;
     text-align: left;
+    line-height: 1.2;
 }
 
 /* Style for footy-local */
@@ -202,17 +204,17 @@ h1 {
     display: flex;
     align-items: center; /* Centers the content vertically */
     gap: 10px; /* Adds a gap between the text and the image */
-    font-size: 30px; /* Same as the body */
+    font-size: 75px; /* Same as the body */
     color: #ecf0f1; /* Same as the body */
-    font-family: Helvetica; /* Same as the body */
+    font-family: 'Roboto', sans-serif;
     text-align: left;
-    }
+}
 
 
 /* Style for logodos */
 #logodos {
-    width: 50px; /* Same as the #logo */
-    height: 50px; /* Same as the #logo */
+    width: 100px; /* Same as the #logo */
+    height: 100px; /* Same as the #logo */
     object-fit: cover; /* Ensure the logo image maintains its aspect ratio */
     border-radius: 50%; /* Make the logo image circular, same as the #logo */
     display: inline-block;
@@ -221,39 +223,38 @@ h1 {
     vertical-align: middle; /* Align the logo vertically with the text */
 }
 
-/* Style for store-logo */
-.store-logo {
-    width: 50px; /* Same as the #logodos */
-    height: 50px; /* Same as the #logodos */
-    object-fit: cover; /* Ensure the logo image maintains its aspect ratio */
-    border-radius: 50%; /* Make the logo image circular, same as the #logodos */
-    display: inline-block;
-    position: relative;
-    margin: 10px; /* Add some space around the logo */
-    vertical-align: middle; /* Align the logo vertically with the text */
+/* Style for apple-logo */
+.apple-logo {
+    width: 230px; /* Adjust this value as needed */
+    height: auto;
+    object-fit: contain;
+    margin: 13px;
+    align-items: center;
+    text-align: left;
 }
 
-/* Style for store-container */
-.store-container {
+/* Style for apple-container */
+.apple-container {
     display: flex;
     align-items: center;
     text-align: left;
 }
 
-
-.store-container p {
-    margin-left: 10px; /* Add some space between the logo and the text */
+/* Style for google-logo */
+.google-logo {
+    width: 260px; /* Adjust this value as needed */
+    height: auto;
+    object-fit: contain;
+    margin: 0;
+    align-items: center;
     text-align: left;
-
 }
 
-/* Style for store-text */
-.store-text {
+/* Style for google-container */
+.google-container {
+    display: flex;
+    align-items: center;
     text-align: left;
-    font-size: 30px; /* Same as the h1 in the .row div */
-    color: #ecf0f1; /* Same as the h1 in the .row div */
-    text-shadow: 2px 2px 4px #000000; /* Same as the h1 in the .row div */
-    font-family: Helvetica; /* Same as the h1 in the .row div */
 }
 
 /* Style for page-text */
