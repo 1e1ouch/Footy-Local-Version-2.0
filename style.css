@@ -1,0 +1,277 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+/*header style*/
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    font-family: Helvetica;
+}
+/*navigation menu style*/
+nav {
+    margin: 0px auto 0;
+    position: relative;
+    width: 100%;
+    height: 75px;
+    background-color: rgba(0, 0, 0, 0.9); /* Black with 70% opacity */
+    border-radius: 8px;
+    font-size: 0;
+    /* Other existing styles */
+    display: flex; /* Make the children of the nav element become flex items */
+    justify-content: space-between; /* Distribute the remaining space evenly between the flex items */
+    /* Other existing styles */
+    align-items: center; /* Align the items vertically in the center */
+    font-family: Helvetica;
+    font-size: 15px;
+    display: flex;
+
+
+}
+#logo {
+    align-self: flex-start; /* Align the logo to the start of the flex container */
+    margin: auto; /* Center the logo vertically and horizontally */
+    /* Other existing styles */
+    /* Add styles for the logo */
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    object-fit: cover; /* Ensure the logo image maintains its aspect ratio */
+    border-radius: 50%; /* Make the logo image circular */
+    display: inline-block;
+    position: relative;
+    justify-content: space-between;
+
+}
+
+.nav-links {
+    /* Add styles for the navigation links and animations */
+    display: flex;
+    justify-content: space-between;
+    width: 70%; /* Adjust as needed */
+    position: relative; /* Add this line */
+    align-self: center; /* Align the nav links to the center of the flex container */
+
+
+}
+#login {
+    align-self: flex-start; /* Align the logo to the start of the flex container */
+    margin: auto; /* Center the logo vertically and horizontally */
+    /* Other existing styles */
+    /* Add styles for the logo */
+    width: 50px; /* Adjust as needed */
+    height: 50px; /* Adjust as needed */
+    object-fit: cover; /* Ensure the logo image maintains its aspect ratio */
+    border-radius: 50%; /* Make the logo image circular */
+    display: inline-block;
+    position: relative;
+    justify-content: space-between;
+}
+nav a {
+    line-height: 50px;
+    height: 100%;
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ecf0f1; /* Change this line */
+    cursor: pointer;
+    width: 20%; /* Make each nav link occupy 20% of the nav bar width */
+
+}
+nav a:visited {
+    color: #ecf0f1;
+}
+.nav-links .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+nav .animation {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    z-index: 0;
+    transition: all .5s ease 0s;
+    border-radius: 8px;
+}
+a:nth-child(1) {
+    width: 20%;
+}
+a:nth-child(2) {
+    width: 20%;
+}
+a:nth-child(3) {
+    width: 20%;
+}
+a:nth-child(4) {
+    width: 20%;
+}
+a:nth-child(5) {
+    width: 20%;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+    width: 20%;
+    left: 0;
+    background-color: #1abc9c;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+    width: 20%;
+    left: 20%;
+    background-color: #e74c3c;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+    width: 20%;
+    left: 40%;
+    background-color: #3498db;
+}
+nav .start-portefolio, a:nth-child(4):hover~.animation {
+    width: 20%;
+    left: 60%;
+    background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+    width: 20%;
+    left: 80%;
+    background-color: #e67e22;
+}
+
+body {
+    font-size: 12px;
+    font-family: Helvetica;
+    background: url('Images/futbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh; /* Make the container take up at least the full viewport height */
+}
+h1 {
+    text-align: left;
+    margin: 40px 0 40px;
+    font-size: 30px;
+    color: #ecf0f1;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: Helvetica;
+}
+span {
+    color: #2BD6B4;
+}
+/*creating the two-column layout*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 25vh;
+    margin: 0;
+    padding: 0;
+    line-height: 1.5; /* Adjust as needed */
+}
+.footy-local {
+    text-align: left;
+}
+#logodos {
+    width: 50px; /* Same as the #logo */
+    height: 50px; /* Same as the #logo */
+    object-fit: cover; /* Ensure the logo image maintains its aspect ratio */
+    border-radius: 50%; /* Make the logo image circular, same as the #logo */
+    display: inline-block;
+    position: relative;
+    margin-right: 10px; /* Add some space between the logo and the text */
+    vertical-align: middle; /* Align the logo vertically with the text */
+}
+
+.store-logo {
+    width: 50px; /* Same as the #logodos */
+    height: 50px; /* Same as the #logodos */
+    object-fit: cover; /* Ensure the logo image maintains its aspect ratio */
+    border-radius: 50%; /* Make the logo image circular, same as the #logodos */
+    display: inline-block;
+    position: relative;
+    margin: 10px; /* Add some space around the logo */
+    vertical-align: middle; /* Align the logo vertically with the text */
+}
+.store-container {
+    display: flex;
+    align-items: center;
+    text-align: left;
+}
+.store-container p {
+    margin-left: 10px; /* Add some space between the logo and the text */
+    text-align: left;
+
+}
+.store-text {
+    text-align: left;
+    font-size: 30px; /* Same as the h1 in the .row div */
+    color: #ecf0f1; /* Same as the h1 in the .row div */
+    text-shadow: 2px 2px 4px #000000; /* Same as the h1 in the .row div */
+    font-family: Helvetica; /* Same as the h1 in the .row div */
+
+}
+
+
+.post, .profile {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    color: #ecf0f1;
+    text-align: left;
+
+}
+
+.profile h1, .profile p {
+    text-align: center;
+    font-size: 12px; /* Same as the body */
+    color: #ecf0f1; /* Same as the body */
+    font-family: Helvetica; /* Same as the body */
+
+}
+.page-text {
+    text-align: center;
+    font-size: 30px; /* Same as the body */
+    color: #ecf0f1; /* Same as the body */
+    font-family: Helvetica; /* Same as the body */
+    text-align: left;
+
+}
+
+/*footer style*/
+footer {
+    position: fixed; /* Fix the position of the footer */
+    bottom: 0; /* Set the footer to the bottom of the page */
+    width: 100%; /* Make the footer span the full width of the page */
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    word-spacing: 30px;
+    padding: 20px;
+    font-family: Helvetica;
+}
+footer img {
+    width: 50px;
+    height: 50px;
+}
+footer a {
+    text-decoration: none;
+}

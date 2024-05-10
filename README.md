@@ -1,2 +1,2 @@
-# Footy-Local-Version-2.0
-Improved version of Footy Local website/app. Application built for finding local soccer pick-up games, etc...
+# website-template
+a website template (index.html, style.css). keeping this to use as a reference for future projects.
