@@ -3,8 +3,33 @@ html, body {
     margin: 0;
     padding: 0;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+section {
+    min-height: 100vh; /* Make the section take up the full viewport height */
+    padding: 50px; /* Add some padding to create space around the content */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Use different background colors for different sections */
+#page1 {
+    height: 100vh; /* Make the section take up the full viewport height */
+
+}
+
+#page2 {
+    background-color: #e0e0e0;
+}
+
+#page3 {
+    background-color: #c8c8c8;
+}
 /* Style for header */
 header {
+    position: relative; /* Add this line */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -20,50 +45,51 @@ nav {
     margin: 0px auto 0;
     position: relative;
     width: 100%;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.9); /* Black with 70% opacity */
-    border-radius: 8px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.8); /* Black with 70% opacity */
     display: flex;
     justify-content: space-between; /* Distribute the remaining space evenly between the flex items */
     align-items: center; /* Align the items vertically in the center */
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
+    z-index: 1; /* Add this line */
 }
 
 /* Style for logo */
 #logo {
-    align-self: flex-start;
-    margin: auto; /* Center the logo vertically and horizontally */
+    position: absolute;
+    top: 10px; /* Adjust this value as needed */
+    left: 50px; /* Adjust this value as needed */
     width: 50px;
     height: 50px;
     object-fit: cover; /* Ensure the logo image maintains its aspect ratio */
     border-radius: 50%; /* Make the logo image circular */
-    display: inline-block;
-    position: relative;
-    justify-content: space-between;
+    z-index: 2; /* Add this line */
 }
+
 
 /* Style for navigation links */
 .nav-links {
     display: flex;
-    justify-content: space-between;
-    width: 70%;
+    justify-content: center; /* Center the navigation links horizontally */
+    width: 100%; /* Take up the full width of its parent */
     position: relative;
     align-self: center;
+    padding: 0 15%; /* Add padding to left and right to avoid overlap with logo and login button */
+
 }
 
 /* Style for login button */
 #login {
-    align-self: flex-start;
-    margin: auto;
+    position: absolute;
+    top: 10px; /* Adjust this value as needed */
+    right: 50px; /* Adjust this value as needed */
     width: 50px;
     height: 50px;
     object-fit: cover;
     border-radius: 50%;
-    display: inline-block;
-    position: relative;
-    justify-content: space-between;
     font-family: 'Roboto', sans-serif;
+    z-index: 2; /* Add this line */
 }
 
 /* Style for navigation links */
@@ -82,75 +108,13 @@ nav a {
     width: 20%;
     font-family: 'Roboto', sans-serif;
 }
+nav a:hover {
+    color: #ffffff; /* Change the text color when hovered */
+    background-color: #4e4d4d; /* Change the background color when hovered */
+}
 
 /* Style for animation in navigation links */
-.nav-links .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    transition: all .5s ease 0s;
-    border-radius: 8px;
-}
 
-nav .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    transition: all .5s ease 0s;
-    border-radius: 8px;
-}
-
-a:nth-child(1) {
-    width: 20%;
-}
-
-a:nth-child(2) {
-    width: 20%;
-}
-
-a:nth-child(3) {
-    width: 20%;
-}
-
-a:nth-child(4) {
-    width: 20%;
-}
-
-a:nth-child(5) {
-    width: 20%;
-}
-
-nav .start-home, a:nth-child(1):hover~.animation {
-    width: 20%;
-    left: 0;
-    background-color: #1abc9c;
-}
-
-nav .start-about, a:nth-child(2):hover~.animation {
-    width: 20%;
-    left: 20%;
-    background-color: #e74c3c;
-}
-
-nav .start-blog, a:nth-child(3):hover~.animation {
-    width: 20%;
-    left: 40%;
-    background-color: #3498db;
-}
-
-nav .start-portefolio, a:nth-child(4):hover~.animation {
-    width: 20%;
-    left: 60%;
-    background-color: #9b59b6;
-}
-
-nav .start-contact, a:nth-child(5):hover~.animation {
-    width: 20%;
-    left: 80%;
-    background-color: #e67e22;
-}
 
 /*NAVIGATION BAR STYLE ENDS HERE*/
 
@@ -179,7 +143,7 @@ body {
 h1 {
     text-align: left;
     margin: 40px 0 40px;
-    font-size: 30px;
+    font-size: 50px;
     color: #ecf0f1;
     text-shadow: 2px 2px 4px #000000;
     font-family: 'Roboto', sans-serif;
@@ -267,13 +231,13 @@ h1 {
 }
 
 /* Style for footer */
+/* Style for footer */
 footer {
-    position: fixed; /* Fix the position of the footer */
-    bottom: 0; /* Set the footer to the bottom of the page */
     width: 100%; /* Make the footer span the full width of the page */
     text-align: center;
-    align-items: center;
-    justify-content: center;
+    display: flex; /* Use flexbox to center the content */
+    justify-content: center; /* Center the content horizontally */
+    align-items: center; /* Center the content vertically */
     word-spacing: 30px;
     padding: 20px;
     font-family: Helvetica;
@@ -283,9 +247,30 @@ footer {
 footer img {
     width: 50px;
     height: 50px;
+    margin: 0 15px; /* Add horizontal margins */
+
 }
 
 /* Style for links in footer */
 footer a {
     text-decoration: none;
+}
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #555; /* Dark background */
+    color: white; /* White text */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
 }
