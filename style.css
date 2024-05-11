@@ -1,3 +1,47 @@
+/* Existing CSS */
+
+/* ... */
+
+/* Media queries for responsiveness */
+
+@media screen and (max-width: 1200px) {
+    /* Adjust styles for screens smaller than 1200px */
+    .nav-links a {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 40px;
+    }
+    .page-text {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    /* Adjust styles for screens smaller than 800px */
+    .nav-links a {
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    .page-text {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    /* Adjust styles for screens smaller than 500px */
+    .nav-links a {
+        font-size: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .page-text {
+        font-size: 15px;
+    }
+}
 /* Reset margin and padding for all elements */
 html, body {
     margin: 0;
@@ -21,7 +65,9 @@ section {
 }
 
 #page2 {
+    height: 100vh; /* Make the section take up the full viewport height */
     background-color: #e0e0e0;
+     margin-top: 50px; /* Adjust this value as needed */
 }
 
 #page3 {
@@ -36,6 +82,7 @@ header {
     text-align: center;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+
 }
 
 /*NAVIGATION BAR STYLE STARTS HERE*/
@@ -43,15 +90,15 @@ header {
 /* Style for navigation bar */
 nav {
     margin: 0px auto 0;
-    position: relative;
+    position: fixed; /* Make the navigation bar fixed */
     width: 100%;
     height: 70px;
     background-color: rgba(0, 0, 0, 0.8); /* Black with 70% opacity */
     display: flex;
     justify-content: space-between; /* Distribute the remaining space evenly between the flex items */
     align-items: center; /* Align the items vertically in the center */
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+    color: #ecf0f1; /* Same as the body */
+    font-family: 'Roboto', sans-serif;    font-size: 15px;
     z-index: 1; /* Add this line */
 }
 
@@ -121,59 +168,62 @@ nav a:hover {
 
 /* Style for body */
 body {
-    font-size: 10px;
-    font-family: 'Roboto', sans-serif;
     background: url('Images/futbackground.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
     padding: 0;
-    text-align: left;
+    text-align: center;
+    line-height: 0.8; /* Decrease this value to bring lines closer together */
 }
 
 /* Style for container */
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 75vh;
-    text-align: left;
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+    text-align: center;
 }
 
-/* Style for h1 */
-h1 {
-    text-align: left;
-    margin: 40px 0 40px;
-    font-size: 50px;
-    color: #ecf0f1;
-    text-shadow: 2px 2px 4px #000000;
+.post {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly between the children */
+    align-items: center; /* Align items to the left */
+    text-align: center; /* Align text to the left */
     font-family: 'Roboto', sans-serif;
-}
+    text-shadow: 2px 2px 4px #000000;
+    color: #ecf0f1; /* Same as the body */
+    line-height: 1.5; /* Decrease this value to bring lines closer together */
+    margin-top: 50px; /* Add some top margin to push down the content */
 
-
-
-/* Style for row */
-.row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 25vh;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    line-height: 1.2;
 }
 
 /* Style for footy-local */
 .footy-local {
-    display: flex;
     align-items: center; /* Centers the content vertically */
-    gap: 10px; /* Adds a gap between the text and the image */
+    gap: 15px; /* Adds a gap between the text and the image */
     font-size: 75px; /* Same as the body */
     color: #ecf0f1; /* Same as the body */
     font-family: 'Roboto', sans-serif;
-    text-align: left;
+    text-align: right;
 }
 
+/* Style for h1 */
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: #ecf0f1; /* Same as the body */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Style for page-text */
+.page-text {
+    font-size: 30px; /* Same as the body */
+    color: #ecf0f1; /* Same as the body */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    line-height: 2; /* Decrease this value to bring lines closer together */
+}
 
 /* Style for logodos */
 #logodos {
@@ -189,50 +239,30 @@ h1 {
 
 /* Style for apple-logo */
 .apple-logo {
-    width: 230px; /* Adjust this value as needed */
+    width: 250px; /* Adjust this value as needed */
     height: auto;
     object-fit: contain;
-    margin: 13px;
+    margin: 16px;
     align-items: center;
-    text-align: left;
-}
-
-/* Style for apple-container */
-.apple-container {
-    display: flex;
-    align-items: center;
-    text-align: left;
+    text-align: center;
 }
 
 /* Style for google-logo */
 .google-logo {
-    width: 260px; /* Adjust this value as needed */
+    width: 280px; /* Adjust this value as needed */
     height: auto;
     object-fit: contain;
-    margin: 0;
+    margin: 0px;
     align-items: center;
-    text-align: left;
-}
-
-/* Style for google-container */
-.google-container {
-    display: flex;
-    align-items: center;
-    text-align: left;
-}
-
-/* Style for page-text */
-.page-text {
     text-align: center;
-    font-size: 30px; /* Same as the body */
-    color: #ecf0f1; /* Same as the body */
-    font-family: Helvetica; /* Same as the body */
-    text-align: left;
 }
+
+
 
 /* Style for footer */
 /* Style for footer */
-footer {
+/* Style for footer-div */
+.footer-div {
     width: 100%; /* Make the footer span the full width of the page */
     text-align: center;
     display: flex; /* Use flexbox to center the content */
@@ -243,34 +273,14 @@ footer {
     font-family: Helvetica;
 }
 
-/* Style for images in footer */
-footer img {
+/* Style for images in footer-div */
+.footer-div img {
     width: 50px;
     height: 50px;
     margin: 0 15px; /* Add horizontal margins */
-
 }
 
-/* Style for links in footer */
-footer a {
+/* Style for links in footer-div */
+.footer-div a {
     text-decoration: none;
-}
-#myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: none; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: #555; /* Dark background */
-    color: white; /* White text */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
-    font-size: 18px; /* Increase font size */
-}
-
-#myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
 }
