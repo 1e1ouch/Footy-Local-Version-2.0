@@ -1,0 +1,249 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .app-section{
+        flex-direction: column;
+    }
+    .appreview, .app-image, appanimation1, appanimation2 {
+        width: 100%;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .app-section, appanimation1, appanimation2 {
+        flex-direction: row;
+    }
+    .appreview, .app-images, appanimation1, appanimation2 {
+        width: 50%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .app-section, appanimation1, appanimation2 {
+        flex-direction: row;
+    }
+    .appreview, .app-images, appanimation1, appanimation2 {
+        width: 50%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .app-section, appanimation1, appanimation2 {
+        flex-direction: row;
+    }
+    .appreview, .app-image, appanimation1, appanimation2s {
+        width: 50%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .app-section, appanimation1, appanimation2 {
+        flex-direction: row;
+    }
+    .appreview, .app-images, appanimation1, appanimation2 {
+        width: 50%;
+    }
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .text-box, appanimation1, appanimation2 {
+        width: 90vw; /* Adjust the width */
+        font-size: 8px; /* Adjust the font size */
+        /* other styles */
+    }
+    /* other styles */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+section {
+    min-height: 100vh; /* Make the section take up the full viewport height */
+    padding: 50px; /* Add some padding to create space around the content */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+/* Style for specific section of page 2 */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+body {
+    overflow-x: hidden; /* Add this line */
+}
+body {
+    padding-top: 70px; /* Add a top padding equal to the height of the nav bar */
+    background: url('Images/futbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    text-align: center;
+    line-height: 0.8; /* Decrease this value to bring lines closer together */
+}
+
+#app {
+    overflow-x: hidden; /* Add this line */
+}
+#app {
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    width: 100%;
+    padding: 25px;
+    text-align: center;
+    line-height: 1.25; /* Decrease this value to bring lines closer together */
+}
+
+
+/* Reset margin and padding for all elements */
+
+
+
+
+/* Style for container */
+.container {
+    display: grid;
+    place-items: center;
+    min-height: 80vh;
+    text-align: center;
+}
+
+
+
+/* Style for appreview */
+.appreview, h2 {
+    font-size: 45px;
+    color: #000000; /* Same as the body */
+    font-family:  "Poppins" , sans-serif;
+    text-align: center; /* Align the text to the left */
+
+}
+
+
+.app-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Distribute space evenly between the children */
+    align-items: center; /* Align items to the left */
+    text-align: center; /* Align text to the left */
+    font-family: 'Roboto', sans-serif;
+    color: #ecf0f1; /* Same as the body */
+    line-height: 1.5; /* Decrease this value to bring lines closer together */
+    margin-top: 50px; /* Add some top margin to push down the content */
+
+}
+
+.app-preview {
+    align-items: center; /* Centers the content vertically */
+    gap: 15px; /* Adds a gap between the text and the image */
+    font-size: 75px; /* Same as the body */
+    color: #ecf0f1; /* Same as the body */
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+
+}
+h2 {
+    align-items: center; /* Centers the content vertically */
+    text-align: center;
+    font-size: 5px;
+    color: #000000; /* Same as the body */
+    font-family: 'Roboto', sans-serif;
+
+}
+.text-box {
+    position: absolute;
+    top: 110vh; /* Adjust this value to position the text box vertically */
+    /* other styles */
+    left: 50%; /* Center the text box horizontally */
+    transform: translateX(-50%); /* Shift the text box leftwards by half of its width */
+    /* other styles */
+    padding: 20px; /* Add some padding */
+    border-radius: 10px; /* Rounded corners */
+    width: calc(42vw); /* Adjust this value as needed */
+    text-align: center; /* Center the text */
+    font-family: 'Poppins', sans-serif;
+    font-size: 10px;
+        /* other styles */
+    color: #000000 !important; /* Black text */
+        /* other styles */
+    }
+
+
+.text-box:nth-child(2) {
+
+    top: calc( 100vh);
+    /* other styles */
+    color: #000000 !important; /* Black text */
+
+}
+
+.text-box:nth-child(3) {
+    top: calc(115vh + 165px);
+    /* other styles */
+}
+
+.text-box:nth-child(4) {
+    top: calc(115vh + 450px);
+    /* other styles */
+}
+
+
+.app-images {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100vw; /* Adjust this value as needed */
+    height: 100vh; /* This will scale the height in proportion to the width */
+
+}
+
+
+.appreview ul {
+    list-style-type: disc; /* This will make the list items bulleted */
+    text-align: left; /* Align the text to the left */
+    color: #000000; /* Same as the body */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.5; /* Adjust this value to control the space between lines */
+}
+
+.appreview ul li {
+    list-style-type: disc; /* This will make the list items bulleted */
+    text-align: center; /* Align the text to the left */
+    color: #000000; /* Same as the body */
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 2;
+}
+.appanimation1 img {
+    position: absolute;
+    right: 2vw;
+    top: 103.8vh;
+    bottom: 0;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+.appanimation2 img {
+    position: absolute;
+    left: 2vw;
+    top: 103.8vh;
+    bottom: 0;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+}
+
+
+
+
+/* PAGE 2 : APP PAGE ENDING */

@@ -1,3 +1,4 @@
+/* PAGE 1 : HOMEPAGE */
 /* Existing CSS */
 
 /* ... */
@@ -59,15 +60,15 @@ section {
 }
 
 /* Use different background colors for different sections */
-#page1 {
+#homepage {
     height: 100vh; /* Make the section take up the full viewport height */
 
 }
 
-#page2 {
+#app {
     height: 100vh; /* Make the section take up the full viewport height */
-    background-color: #e0e0e0;
-     margin-top: 50px; /* Adjust this value as needed */
+    overflow: hidden; /* Add this line */
+
 }
 
 #page3 {
@@ -114,15 +115,22 @@ nav {
     z-index: 2; /* Add this line */
 }
 
+/* Style for logo link */
+nav a#logo-link {
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
 
 /* Style for navigation links */
 .nav-links {
     display: flex;
     justify-content: center; /* Center the navigation links horizontally */
     width: 100%; /* Take up the full width of its parent */
-    position: relative;
+    position: absolute;
     align-self: center;
-    padding: 0 15%; /* Add padding to left and right to avoid overlap with logo and login button */
+    padding: 0 20%; /* Reduce padding to left and right to bring the Home button closer to the logo */
 
 }
 
@@ -157,7 +165,7 @@ nav a {
 }
 nav a:hover {
     color: #ffffff; /* Change the text color when hovered */
-    background-color: #4e4d4d; /* Change the background color when hovered */
+    background-color: #000000; /* Change the background color when hovered */
 }
 
 /* Style for animation in navigation links */
@@ -168,9 +176,11 @@ nav a:hover {
 
 /* Style for body */
 body {
+    padding-top: 70px; /* Add a top padding equal to the height of the nav bar */
     background: url('Images/futbackground.jpg') no-repeat center center fixed;
     background-size: cover;
     margin: 0;
+    width: 100%;
     padding: 0;
     text-align: center;
     line-height: 0.8; /* Decrease this value to bring lines closer together */
@@ -204,6 +214,7 @@ body {
     gap: 15px; /* Adds a gap between the text and the image */
     font-size: 75px; /* Same as the body */
     color: #ecf0f1; /* Same as the body */
+    text-shadow: 2px 2px 4px #000000;
     font-family: 'Roboto', sans-serif;
     text-align: right;
 }
@@ -212,6 +223,7 @@ body {
 h1 {
     text-align: center;
     font-size: 50px;
+    text-shadow: 2px 2px 4px #000000;
     color: #ecf0f1; /* Same as the body */
     font-family: 'Roboto', sans-serif;
 }
@@ -264,7 +276,7 @@ h1 {
 /* Style for footer-div */
 .footer-div {
     width: 100%; /* Make the footer span the full width of the page */
-    text-align: center;
+    text-align: right;
     display: flex; /* Use flexbox to center the content */
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
@@ -284,3 +296,9 @@ h1 {
 .footer-div a {
     text-decoration: none;
 }
+
+/* PAGE 1 : HOMEPAGE ENDING */
+
+
+
+
