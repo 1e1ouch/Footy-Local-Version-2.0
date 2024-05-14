@@ -16,8 +16,7 @@
             <a href="events.html">Events</a>
             <a href="locations.html">Locations</a>
             <a href="community.html">Community</a>
-            <a href="#page3">Contact</a>
-        </div>
+            <a href="index.html#page3">Contact</a>        </div>
         <button id="login">Login</button>
     </nav>
 </header>
@@ -93,5 +92,21 @@
         </form>
     </section>
 </main>
+<script>
+    let imageIndex = 1;
+
+    function changeBackgroundImage() {
+        const page1 = document.getElementById('page1');
+        page1.className = 'image' + imageIndex;
+        imageIndex++;
+        if (imageIndex > 2) {
+            imageIndex = 1;
+        }
+    }
+
+    // Change the background image every 10 seconds
+    setInterval(changeBackgroundImage, 5000);
+</script>
 </body>
 </html>
+

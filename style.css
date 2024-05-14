@@ -42,6 +42,38 @@
         font-size: 15px;
     }
 }
+
+
+
+/* Define the keyframes for the animation */
+@keyframes background-switch {
+    0% {
+        background-image: url('Images/futbackground.jpg');
+    }
+    33% {
+        background-image: url('Images/footybackground.jpeg');
+    }
+    66% {
+        background-image: url('Images/atl.jpeg');
+    }
+    100% {
+        background-image: url('Images/footybackground.jpeg');
+    }
+}
+#page1.image1 {
+    background-image: url('Images/futbackground.jpg');
+}
+
+
+#page1.image2 {
+    background-image: url('Images/atl.jpeg');
+}
+
+#page1 {
+    transition: background-image 1s ease-in-out;
+}
+
+
 /* Reset margin and padding for all elements */
 html, body {
     margin: 0;
@@ -423,3 +455,173 @@ body {
     background-color: #4e4d4d; /* Black background */
     color: #ecf0f1; /* White text */
 }
+
+/* Style for the Location Page */
+
+#locations-page header div h1{
+    padding-top: 80px;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+#locations-page {
+    background: url('Images/futbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #ecf0f1; /* White text */
+}
+#locations-page header div h1,
+#locations-page header div p {
+    line-height: 2; /* Adjust this value as needed */
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#locations-page header div p {
+    font-size: 30px;
+    max-width: 500px; /* Adjust this value as needed */
+    margin: auto;
+    align-items: center;
+}
+
+.location-button {
+    background-color: #e80000;
+    color: #ffffff;
+    border: 8px solid #000000;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    text-shadow: 2px 2px 4px #000000;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 5px; /* Add some border radius to make the buttons look cleaner */
+}
+.location-button:hover {
+    background-color: #ff0000; /* Change the background color on hover */
+    color: #ffffff; /* Change the text color on hover */
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 20vh; /* Adjust this value as needed */
+    margin-bottom: 50px; /* Adjust this value as needed */
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    height: 20vh;
+    margin-bottom: 50px; /* This line adds space below the buttons */
+}
+
+.region-box {
+    width: 375px; /* Adjust as needed */
+    padding: 25px; /* Adjust as needed */
+    background-color: #f8f8f8; /* Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Small shadow for a "lifted" effect */
+    margin: 20px auto; /* Center the box and add some margin at the top and bottom */
+    text-align: center; /* Center the text */
+    font-family: 'Roboto', sans-serif;
+    color: white; /* Black text */
+    font-size: 23px;
+    line-height: 1.5; /* Adjust this value as needed */
+    background-image: url(Images/atl.jpeg); /* Add your image path here */
+    background-size: cover; /* This will make sure the image covers the whole region box */
+    background-repeat: no-repeat; /* This will prevent the image from repeating */
+}
+.region-box p1{
+    font-family: 'Roboto', sans-serif;
+    color: white; /* Black text */
+    line-height: 2; /* Adjust this value as needed */
+    font-size: 15px;
+
+}
+
+.region-box h2 {
+    margin-bottom: 10px; /* Add some space below the title */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1; /* Adjust this value as needed */
+
+}
+
+.region-box .region-description {
+    margin: 20px 0; /* Add some space above and below the description */
+    font-family: 'Roboto', sans-serif;
+    line-height: 1; /* Adjust this value as needed */
+
+}
+
+.region-box .explore-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    font-family: 'Roboto', sans-serif;
+    border: 8px solid #000000; /* Add a 2px solid black border */
+    padding: 10px 20px; /* Add some padding */
+    text-align: center; /* Center the text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Necessary for adding padding */
+    font-size: 20px; /* Adjust as needed */
+    margin: 4px 2px; /* Add some margin */
+    cursor: pointer; /* Change cursor to pointer when hovering over the button */
+    border-radius: 5px; /* Rounded corners */
+    line-height: 2; /* Adjust this value as needed */
+
+}
+.explore-button:hover {
+    background-color: #45a049; /* Change the background color on hover */
+    color: #ffffff; /* Change the text color on hover */
+}
+
+/* Style for Events Page */
+
+#events-page header div h1{
+    padding-top: 80px;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+#events-page {
+    background: url('Images/futbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #ecf0f1; /* White text */
+}
+#events-page header div h1,
+#events-page header div p {
+    line-height: 2; /* Adjust this value as needed */
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Style for the Community Page */
+
+#community-page header div h1{
+    padding-top: 80px;
+    text-shadow: 2px 2px 4px #000000;
+
+}
+
+#community-page {
+    background: url('Images/futbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    color: #ecf0f1; /* White text */
+}
+#community-page header div h1,
+#community-page header div p {
+    line-height: 2; /* Adjust this value as needed */
+    text-shadow: 2px 2px 4px #000000;
+}
+
+
+
+
