@@ -52,6 +52,9 @@ html, body {
     padding: 0;
     box-sizing: border-box; /* Include padding and border in element's total width and height */
 }
+html {
+    scroll-behavior: smooth;
+}
 section {
     min-height: 100vh; /* Make the section take up the full viewport height */
     padding: 50px; /* Add some padding to create space around the content */
@@ -61,18 +64,12 @@ section {
 /* Use different background colors for different sections */
 #page1 {
     height: 100vh; /* Make the section take up the full viewport height */
+    background: url('Images/futbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
 
 }
 
-#page2 {
-    height: 100vh; /* Make the section take up the full viewport height */
-    background-color: #e0e0e0;
-     margin-top: 50px; /* Adjust this value as needed */
-}
 
-#page3 {
-    background-color: #c8c8c8;
-}
 /* Style for header */
 header {
     position: relative; /* Add this line */
@@ -168,8 +165,6 @@ nav a:hover {
 
 /* Style for body */
 body {
-    background: url('Images/futbackground.jpg') no-repeat center center fixed;
-    background-size: cover;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -286,6 +281,41 @@ h1 {
 }
 
 /* Style for Page 2 */
+#page2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 50px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #ecf0f1;
+    background: url('Images/bckgr1.jpeg') no-repeat center center fixed;
+    background-size: cover;
+
+}
+
+#page2 h1, #page2 h2 {
+    text-align: center;
+    line-height: 1; /* Adjust this value as needed */
+}
+
+#page2 p {
+    text-align: center;
+    font-size: 20px;
+}
+
+.app-store-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.apple-logo, .google-logo {
+    width: 150px;
+    height: auto;
+}
 
 /* Style for Contact Us page (Page 3) */
 /* Style for form in the contact page */
